@@ -17,7 +17,7 @@ list = [random.randint(0, 20) for _ in range(number)]
 print(list)
 num_find_x = int(input("Введите число из списка для поиска: "))
 count = 0
-for i in range(len(list)):
-    if list[i] == num_find_x:
+for elem in list:
+    if elem == num_find_x:
         count += 1
 print(f"Количество чисел {num_find_x} в списке = {count}")
