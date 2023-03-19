@@ -12,8 +12,9 @@
 import random
 print("info: Программа ищет ближайшее число, и еще одно, если есть такое же равноудаленное, но в противоположную строну.")
 print("(Пример: ищем 5, а в списке есть 3 и 7)")
+print()
 number = int(input("Введите размер списка: "))
-print
+print()
 list = [random.randint(0, 20) for _ in range(number)]
 print(list)
 num_find_x = int(input("Введите число для поиска ближайших чисел из списка: "))
