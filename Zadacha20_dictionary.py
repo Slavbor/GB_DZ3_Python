@@ -13,5 +13,4 @@ for letter in word:
     for keys in diction:
         if letter in keys:
             score += diction[keys]
-
 print(score)
