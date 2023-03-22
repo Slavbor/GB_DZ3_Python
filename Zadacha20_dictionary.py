@@ -1,3 +1,4 @@
+
 word = input("Введите слово: ").upper()
 score = 0
 diction = {('А', 'В', 'Е', 'И', 'Н', 'О', 'Р', 'С', 'Т', 'A', 'E', 'I', 'O', 'U', 'L', 'N', 'S', 'T', 'R'): 1,
@@ -8,8 +9,9 @@ diction = {('А', 'В', 'Е', 'И', 'Н', 'О', 'Р', 'С', 'Т', 'A', 'E', 'I',
        ('Ш', 'Э', 'Ю', 'J', 'X'): 8,
        ('Ф', 'Щ', 'Ъ', 'Q', 'Z'): 10}
 
-for keys, value in diction.items():
-    for letter in word:
+for letter in word:
+    for keys in diction:
         if letter in keys:
-            score += value
+            score += diction[keys]
+
 print(score)
